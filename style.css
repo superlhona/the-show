@@ -1,4 +1,16 @@
-.ted-1 img {
-	height: 150px;
-	bottom: 0;
+img {
+	height: 200px;
+}
+
+img #img-title{
+	height: auto;
+}
+
+.one{
+	margin: 0 auto;
+}
+
+#button-0{
+	height: auto;
+	padding: 50px;
 }
