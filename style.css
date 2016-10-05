@@ -15,10 +15,20 @@ img #img-title{
 }
 
 #intro{
-	padding-top: 50px;
 	padding-left: 150px;
+	font-size: 16px;
 }
 
 #tedmosby{
+	float: left;
+}
+
+#intro-vic{
+	text-align: center;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+#gf-1 {
 	float: left;
 }

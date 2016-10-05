@@ -8,15 +8,28 @@ $(document).ready(function(){
 	});
 
 	$( ".element" ).click(function() {
-  	  $( "#tedmosby" ).show( "slow" );
+  	  $( "#tedmosby" ).slideDown( "slow" );
  	  $( ".one" ).hide( "fast" ).queue( function() {
-        $( "#intro" ).show( 2000 );
- 
-        // This tells jQuery to continue to the next item in the queue
+        $( "#intro" ).show( 10 );
+
         $( this ).dequeue();
     } );
 
   	});
+
+  		$("#intro").click(function() {
+  			$("#tedmosby").hide( "fast" );
+   			$( "#gf-1" ).slideDown( "slow" );
+   			$("#intro").hide( "fast" );
+	});
+
+  			$("#gf-1").hover(function() {
+  			$("#intro-vic").show( "fast" );
+	});
+
+  	$("#intro-vic").click(function() {
+  			$("#gf-2").show( "fast" );
+	});
 
 
 // $( "#tedmosby" )
