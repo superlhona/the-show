@@ -28,84 +28,37 @@ $(document).ready(function(){
 	});
 
   	$("#intro-vic").click(function() {
-  			$("#gf-2").show( "fast" );
+  			$("#gf-1").hide( "fast" );
+   			$("#gf-2").animate({width:'toggle'},350);
+   			$("#intro-vic").hide( "fast" );
+   			$("#intro-robin").animate({width:'toggle'},500);
 	});
 
+  		$("#intro-robin").click(function() {
+  			$("#gf-2").hide( "fast" );
+   			$( "#gf-3" ).slideDown( "slow" );
+   			$("#intro-robin").hide( "fast" );
+	});
 
-// $( "#tedmosby" )
-//     .animate( {
-//         height: 150
-//     }, "slow")
-//     .queue( function() {
-//         $( "#intro" ).fadeIn( "slow" );
- 
-//         // This tells jQuery to continue to the next item in the queue
-//         $( this ).dequeue();
-//     } );
+  			$("#gf-3").hover(function() {
+  			$("#intro-stella").show( "fast" );
+	});
 
+  		$("#intro-stella").click(function() {
+  			$("#gf-3").hide( "fast" );
+   			$("#gf-4").animate({width:'toggle'},350);
+   			$("#intro-stella").hide( "fast" );
+   			$("#intro-zoey").animate({width:'toggle'},500);
+	});
 
-
-
-
-	// $(".tedmosby").click(function(){
- //        var div = $("#intro");
- //        div.animate({height: 300}, "slow");
- //        div.animate({width: 300}, "slow");
- //        div.animate({height: 100}, "slow");
- //        div.animate({width: 100}, "slow");
-	// });
-
-	// $( ".element" ).click(function() {
-	//   	$( "#tedmosby" ).show( "slow" );
-	//   	$( ".one" ).hide( "fast" );
-	//   	.queue(function() {
- //      $( this ).show( "#intro" ).dequeue();
- //    })
-	// });
-
-// 	$( document.body ).click(function() {
-//   $( "div" )
-//     .show( "slow" )
-//     .animate({ left: "+=200" }, 2000 )
-//     .queue(function() {
-//       $( this ).addClass( "newcolor" ).dequeue();
-//     })
-//     .animate({ left: "-=200" }, 500 )
-//     .queue(function() {
-//       $( this ).removeClass( "newcolor" ).dequeue();
-//     })
-//     .slideUp();
-// });
-
-
-
-// 	$("#ted-1").click(function() {
-//    		$( "#gf-1" ).fadeIn( "slow" ), function() {
-//    			$("#intro-vic").show( "fast" );
-//    		}
-// 	});
-
-// 	$("#ted-1").click(function() {
-//    		$( "#gf-1" ).fadeIn( "fast" );
-// 		$("#intro-vic").slideDown( "slow" );
-//    		}
-// 	});
-
-	// $(function(){
- //      $("#intro-vic").appear("fast");
-	//   });
-
-
-// $(".ted-1").on("click", function(){
-//     $( "#gf-1" ).show( "slow", function(){
-//         $("#intro-vic").show(); // or fadeIn(), show() ect..
-//     });
-// });
-
-// $( ".ted-1" ).click(function() {
-//     $( "#gf-1" ).show(), function(){
-//         $("#intro-vic").show();
-//     });
-// });
+  		$("#intro-zoey").click(function() {
+  			$("#heart").show("fast");
+  			$("#gf-4").hide( "fast" );
+   			$("#wife").animate({width:'toggle'},800);
+   			$("#intro-zoey").hide( "fast" );
+   			$("#intro-wife").animate({width:'toggle'},1200);
+   			var div = $("#heart");
+	        // div.animate({left: '100px'}, "slow");
+    });
 
 });
