@@ -58,7 +58,21 @@ $(document).ready(function(){
    			$("#intro-zoey").hide( "fast" );
    			$("#intro-wife").animate({width:'toggle'},1200);
    			var div = $("#heart");
-	        // div.animate({left: '100px'}, "slow");
+	        div.animate({fontSize: '2em'}, "slow");
+	        div.animate({fontSize: '1em'}, "slow");
+	        div.animate({fontSize: '2em'}, "slow");
+	        div.animate({fontSize: '1em'}, "slow");
     });
+// });
+//     });
+// });
+// 	});
+
+// $("#heart").click(function() {
+//   			$("#heart").animate({left:"150px"}, "slow")
+//            .animate({top:"150px"}, "slow")
+//            .animate({left:0},"slow")
+//            .animate({top:0}, "slow");
+// 	});
 
 });
